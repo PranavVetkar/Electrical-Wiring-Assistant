@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrical Wiring Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Electrical Wiring Assistant ⚡</h1>
+
+    <div class="input-section">
+      <label for="numRooms">Number of Rooms:</label>
+      <input type="number" id="numRooms" min="1" placeholder="e.g. 3" />
+      <button onclick="generateRoomInputs()">Add Rooms</button>
+    </div>
+
+    <div id="roomsContainer"></div>
+
+    <button id="calculateBtn" onclick="calculateLoad()">Calculate Load</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
